@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D77C45A-BF9E-4872-B8E5-B80F20C3CA1A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Delegate</RootNamespace>
+    <AssemblyName>Delegate</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Delegate.Delegates.EventGeneratorClass4</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Delegates\ArrayofDelegate.cs" />
+    <Compile Include="Delegates\Client1.cs" />
+    <Compile Include="Delegates\Client2.cs" />
+    <Compile Include="Delegates\Client3.cs" />
+    <Compile Include="Delegates\Client4.cs" />
+    <Compile Include="Delegates\ClsDelegate.cs" />
+    <Compile Include="Delegates\ClsDelegate1.cs" />
+    <Compile Include="Delegates\ClsDelegate3.cs" />
+    <Compile Include="Delegates\Delegate2.cs" />
+    <Compile Include="Delegates\DelegateExample.cs" />
+    <Compile Include="Delegates\DelegateProgram1.cs" />
+    <Compile Include="Delegates\DelegateProgram2.cs" />
+    <Compile Include="Delegates\Deligate1.cs" />
+    <Compile Include="Delegates\Events.cs" />
+    <Compile Include="Delegates\ExecuteEvent.cs" />
+    <Compile Include="Delegates\MaleStudent.cs" />
+    <Compile Include="Delegates\Multicast.cs" />
+    <Compile Include="Delegates\MyTest.cs" />
+    <Compile Include="Delegates\Product.cs" />
+    <Compile Include="Delegates\Program.cs" />
+    <Compile Include="Delegates\Publisher.cs" />
+    <Compile Include="Delegates\Subscriber.cs" />
+    <Compile Include="Delegates\WindowEvent1.cs" />
+    <Compile Include="Delegates\WindowEvent2.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

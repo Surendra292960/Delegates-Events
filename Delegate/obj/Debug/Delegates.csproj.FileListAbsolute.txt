@@ -1,0 +1,3 @@
+G:\C#.NetPrograms\Delegate\Delegate\obj\Debug\Delegates.csproj.CoreCompileInputs.cache
+G:\C#.NetPrograms\Delegate\Delegate\obj\Debug\Delegate.exe
+G:\C#.NetPrograms\Delegate\Delegate\obj\Debug\Delegate.pdb
